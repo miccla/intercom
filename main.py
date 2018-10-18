@@ -17,4 +17,3 @@ if __name__ == '__main__':
     for invitee in inviter.get_customers_to_invite(args.customers):
         print(' ', end='')
         print(invitee)
-
