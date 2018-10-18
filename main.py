@@ -1,6 +1,5 @@
 import argparse
 import logging
-import pprint
 
 from intercom_inviter.inviter import Inviter
 
@@ -12,7 +11,6 @@ if __name__ == '__main__':
     args = parser.parse_args()
     inviter = Inviter()
 
-    pp = pprint.PrettyPrinter(width=72, compact=True)
     print('The following users are within 100k of the Intercom Dublin Office (Ordered by user_id).:')
     for invitee in inviter.get_customers_to_invite(args.customers):
         print(' ', end='')
