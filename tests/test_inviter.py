@@ -112,7 +112,7 @@ class TestInviter(unittest.TestCase):
     #     print(inviter.get_customers_to_invite(ROOT_DIR / 'tests' / 'customers.txt'))
 
     def test__great_circle_distance(self):
-        # Some know distances grabbed from Google
+        # Some known distances grabbed from Google
         expected1 = 1.57
         point_a = (53.339428, -6.257664,)  # constants.DUBLIN_OFFICE_COORDINATES
         point_b = (53.339280, -6.281314,)  # Facebook Dublin
